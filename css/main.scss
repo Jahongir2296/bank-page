@@ -1,0 +1,355 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.invite{
+  width: 163px;
+  height: 44px;
+  background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  border-radius: 22px;
+  border:none;
+  color:#fff;
+  cursor: pointer;
+   &:hover{
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+    border-radius: 22px;
+      }
+}
+
+.nav {
+  &__content {
+    display: flex;
+    padding: 18px 0;
+    align-items: center;
+    position: relative;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content ul {
+    margin-left: 251px;
+    display: flex;
+    gap: 30px;
+  }
+    ul{
+      li{
+        a{
+          position: relative;
+          font-size: 12px;
+          color:  rgba(149, 151, 165, 1);
+
+          font-weight: 600;
+        }
+      }
+    }
+
+  ul li a::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 2px;
+     background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    bottom: -5px;
+    transition: 0.4s transform;
+    transform: scaleX(0);
+    transform-origin: right;
+    
+  }
+  
+  ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+    text-decoration: none;
+    color:red
+  }
+  ul li a:hover{
+    color:#000;
+  }
+  &__content button {
+    width: 163px;
+    height: 44px;
+    background: linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
+    border-radius: 22px;
+    border: none;
+    margin-left: 226px;
+     &:hover{
+      background: #FFFFFF;
+      mix-blend-mode: normal;
+      opacity: 0.4;
+      border-radius: 22px;
+     }
+  }
+  #check{
+    display: none;
+  }
+  label #btn,
+  label #cancel {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    transform: translate(0, -50%);
+    display: none;
+  }
+}
+
+
+.main {
+   background-color:#E5E5E5;
+   display: flex;
+   justify-content: center;
+   &__left{
+     margin-top: 170px;
+     margin-left: -145px;
+   }
+   &__left h1{
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -1px;
+    color: #2d314d;
+   }
+   &__left p{
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.28125px;
+    color: #9597A5;
+    margin: 25px 0 35px 0;
+    
+   }
+  &__left  a{
+    color:#fff;
+  }
+    &__right {
+      position: relative;
+      right: -500px;
+      background-image: url(../img/hero-bg-desktop.svg);
+      background-repeat: no-repeat;
+      background-size: cover;   
+  }
+  
+}
+
+.choose{
+  margin-top: -100px;
+  background-color:#F4F5F7;
+  padding-bottom: 84px;
+  &__content h1{
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: -0.714286px;
+    padding-top: 96px;
+  }
+  &__content p{
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.28125px;
+    color: #9597A5;
+    margin-top: 16px;
+
+  }
+  .boxs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 72px;
+  }
+  .box h2{
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.428571px;
+    margin-top: 40px;
+
+  }
+  .box p{
+    
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+    color: #9597A5;
+      }
+}
+.adv{
+  padding-bottom: 80px;
+  &__boxs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  &__content h1{
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: -0.714286px;
+    color: #2D314D;
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+  }
+  .box__content h5{
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: -0.15625px;
+    color: #9597A5;
+    margin: 25px 0 8px 0;
+  }
+  .box__content h2{
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.285714px;
+    color: #2D314D;
+      }
+  .box__content p{
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.203125px;
+    color: #9597A5;
+    margin: 8px 0 24px 0;
+
+  }   
+}
+.footer{
+  background-color: rgba(44, 49, 76, 1);
+  padding:  48px 0;
+  &__content{
+    display: flex;
+  }
+  .footer__icon{
+    margin-top: 55px;
+    display: flex;
+    gap: 13px;
+    
+  }
+  .footer__icon svg{
+    :hover{
+      color: rgba(48, 200, 143, 1);
+
+    }
+  }
+  .footer__menu-right{
+    margin-left: 131px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:#fff;
+    :hover{
+      color: rgba(48, 200, 143, 1);
+
+    }
+  }
+  .footer__menu{
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:#fff;
+    :hover{
+      color: rgba(48, 200, 143, 1);
+
+    }
+  }
+  .footer__left{
+    margin-left: 340px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media only screen and(min-width:377px) {
+  .burger-btn,
+  .close {
+    display: none;
+  }
+}
+
+@media (max-width: 376px) {
+  label #btn {
+    display: inline-block;
+  }
+  ul {
+    position: fixed;
+    top: 0px;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    padding-top: 80px;
+    display: block;
+    line-height: 40px;
+    z-index: 100;
+    background-color: #000;
+  }
+
+  ul li {
+    margin-left: 50px;
+  }
+
+  ul li a {
+    color: #fff;
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul{
+    right: 0;
+    transition: 0.5;
+  }
+
+  #check:checked ~ label #btn{
+    display: none; 
+   
+  }
+
+  #check:checked ~ label #cancel{
+    display: block; 
+    z-index: 101;
+    color: #fff
+  }
+  .nav__content button{
+    display: none;
+  }
+}
